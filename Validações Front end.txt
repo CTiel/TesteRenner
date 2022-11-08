@@ -1,0 +1,132 @@
+
+PLANO DE TESTE
+===================
+
+INTRODUÇÃO
+
+O presente plano de teste descreve o planejamento para a criar e implementar as validações de 
+cobertura para o e-commerce LOJAS RENNER.
+Este documento deve estar disponível para todos os envolvidos no projeto.
+A abordagem de teste adotada, dará cobertura para o front-end (com testes funcionais). 
+
+OBJETIVOS
+
+Este documento descreve o plano para testar a aplicação e-commerce LOJAS RENNER, que suporta os 
+seguintes objetivos:
+
+- 
+
+
+ESCOPO
+
+
+MAPA MENTAL
+
+
+SUÍTE DE CASOS DE TESTES
+(Front-end)
+
+==> FLUXO DIRETO DE COMPRA
+
+=> CADASTRO DE USUÁRIO
+
+- CT01 - Validar o cadastro de usuário convencional;
+- CT02 - Validar o cadastro com o Facebook;
+- CT03 - Validar o cadastro com o Google;
+
+=> LOGIN
+
+- CT04 - Validar login convencional;
+- CT05 - Validar login com o Facebook;
+- CT06 - Validar login com o Google;
+- CT07 - Validar recuperação de senha;
+- CT08 - Validar instruções enviadas para o email;
+
+=> PRODUTO
+
+- CT09 - Validar busca de produto por foto;
+- CT10 - Validar busca de produto por descrição;
+
+=> SACOLA
+
+- CT11 - Validar envio de produto para sacola;
+- CT12 - Validar retirada de produto da sacola;
+- CT13 - Validar cupom de desconto na sacola;
+- CT14 - Validar alteração de CEP na sacola;
+- CT15 - Validar cupom de desconto na sacola;
+
+=> ENTREGA
+
+- CT16 - Validar operação de retirada na loja;
+- CT17 - Validar entrega por transporte - calculadora de frete;
+- CT18 - Validar adição de novo endereço de entrega;
+       - Validar escolha de endereço existente;
+
+=> PAGAMENTO
+
+- CT19 - Validar adição de novo cartão de crédito à vista;
+- CT20 - Validar adição de novo cartão de crédito parcelado;
+- CT21 - Validar compra com cartão de crédito cadastrado;
+- CT22 - Validar compra com cartão Renner;
+- CT23 - Validar compra com cartão "Meu cartão";
+- CT24 - Validar pagamento com Pix;
+- CT25 - Validar pagamento com boleto;
+- CT26 - Validar pagamento com cartão presente;
+- CT27 - Validar pagamento com cartão virtual Caixa;
+
+
+==> OUTRAS OPERAÇÕES SECUNDÁRIAS 
+
+=> CADASTRO DE USUÁRIO
+
+- CT28 - Validar alteração no cadastro;
+- CT29 - Validar Finalização com 1 click;
+- CT30 - Validar devolução de pedido;
+- CT31 - Validar vale troca;
+- CT32 - Validar consulta saldo de cartão presente;
+- CT33 - Validar edição de endereço cadastrado; 
+
+
+
+
+
+
+
+
+
+
+
+ESTRATÉGIAS DE TESTE
+(Níveis de teste)
+
+
+REGRESSÃO DE RELEASE
+
+
+REGRESSÃO DE PACOTES
+
+(Testes candidatos para a automação: Front-end)
+
+
+
+FERRAMENTAS
+
+
+EQUIPE DE TESTES
+
+
+CRONOGRAMA
+
+
+
+CONCLUSÃO
+
+
+
+
+
+
+
+
+
+
