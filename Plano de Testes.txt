@@ -1,0 +1,222 @@
+
+PLANO DE TESTE
+===================
+
+INTRODUÇÃO
+
+Ao que tange o plano de testes, prosseguirá com o andamento da criação para implementação das 
+validações, para funcionamento do site (https://www.lojasrenner.com.br/).
+Essa documentação visa estar disponibilizado para todas as partes interessadas (gerência, 
+desenvolvedores, clientes, equipe de testes, etc) e adotando a abordagem aos testes de front-end 
+(testes funcionais), para um melhor funcionamento da aplicação que está sendo executada e 
+desenvolvida.
+
+
+OBJETIVOS
+
+O plano de testes que está sendo descrito, tem a finalidade de realizar os devidos testes e 
+aplicações para utilização do e-commerce Lojas Renner, que irá atender aos seguintes objetivos:
+
+. Identificar os dados pré-existentes no processo de testagem e o software que está sendo 
+trabalhado;
+. Listar os testes recomendados visando alto nível de processos, para uma melhor integração;
+. Sugerir o planejamento de testes a serem executados na empregabilidade dos testes;
+. Identificar o grau de complexidade dos recursos solicitados, com objetivo de fornecer uma 
+estimativa de tempo, pessoal e ferramentes necessárias, para a execução do testes requeridos;
+. Listar as ferramentas para execução das tarefas de testes.
+
+
+ESCOPO
+
+Este plano tem o objetivo de demonstrar os testes de integração e do sistema que serão dados 
+sequência no ambiente de concessão para aprovação.
+Estamos assumindo que os testes de unidade já forneceram a análise e homologação necessária para 
+o site, pois as partes de back-end não serão cobradas em plano de teste ao que está sendo elaborado.
+Portanto, os seguintes testes estão no próposito do escopo:
+
+Cadastro (cadastro convencional, por rede social);
+Login (login convencional, login por rede social, recuperação de senha);
+Fluxo de compra (login, escolha do produto, sacola, endereço, pagamento, retirada/entrega);
+Operações secundárias ao fluxo de compra (central de informações, dados de usuário, lista de desejos, 
+informações de produtos).
+
+
+MAPA MENTAL
+
+
+SUÍTE DE CASOS DE TESTES
+(Front-end)
+
+==> FLUXO DIRETO DE COMPRA
+
+=> CADASTRO
+
+- CT01 - Validar o cadastro de usuário convencional;
+- CT02 - Validar o cadastro com o Facebook;
+- CT03 - Validar o cadastro com o Google;
+
+=> LOGIN/IDENTIFICAÇÃO
+
+- CT04 - Validar login convencional;
+- CT05 - Validar login com o Facebook;
+- CT06 - Validar login com o Google;
+- CT07 - Validar login no checkout;
+- CT08 - Validar recuperação de senha;
+- CT09 - Validar instruções enviadas para o email;
+- CT10 - Validar a recuperação de senha quando não se tem acesso ao email cadastrado;
+
+=> PRODUTO
+
+- CT11 - Validar busca de produto por foto;
+- CT12 - Validar busca de produto por descrição;
+
+=> SACOLA
+
+- CT13 - Validar envio de produto para sacola (comprar);
+- CT14 - Validar retirada de produto da sacola (excluir produto);
+- CT15 - Validar cupom de desconto na sacola;
+- CT16 - Validar alteração de CEP na sacola;
+
+=> ENTREGA
+
+- CT17 - Validar operação de retirada na loja;
+- CT18 - Validar entrega por transporte - calculadora de frete;
+- CT19 - Validar adição de novo endereço de entrega;
+- CT20 - Validar escolha de endereço existente;
+
+=> PAGAMENTO
+
+- CT21 - Validar adição de novo cartão de crédito à vista;
+- CT22 - Validar adição de novo cartão de crédito parcelado;
+- CT23 - Validar compra com cartão de crédito cadastrado;
+- CT24 - Validar compra com cartão Renner;
+- CT25 - Validar compra com cartão "Meu cartão";
+- CT26 - Validar pagamento com Pix;
+- CT27 - Validar pagamento com boleto;
+- CT28 - Validar pagamento com cartão presente;
+- CT29 - Validar pagamento com cartão de débito virtual Caixa;
+
+
+==> OUTRAS OPERAÇÕES SECUNDÁRIAS 
+
+=> CADASTRO DE USUÁRIO
+
+- CT30 - Validar alteração no cadastro;
+- CT31 - Validar compra com 1 click;
+- CT32 - Validar devolução de pedido;
+- CT33 - Validar vale troca;
+- CT34 - Validar criação de cartão presente;
+- CT35 - Validar criação de cartão presente para empresa;
+- CT36 - Validar consulta saldo de cartão presente;
+- CT37 - Validar edição de endereço cadastrado; 
+- CT38 - Validar preferência de cor;
+- CT39 - Validar preferência de tamanho;
+- CT40 - Validar preferência de estilo;
+	   
+=> LISTA DE DESEJOS
+
+- CT41 - Validar consulta de lista;
+- CT42 - Validar exclusão de item da lista;
+- CT43 - Validar envio de item para sacola;
+
+=> PRODUTOS
+
+- CT44 - Validar envio de produto para lista de desejos;
+- CT45 - Validar avaliações;
+- CT46 - Validar cores disponíveis;
+- CT47 - Validar tamanhos disponíveis;
+- CT48 - Validar adição de item na sacola; 	   
+
+
+
+
+ESTRATÉGIAS DE TESTE
+(Níveis de teste)
+
+- O Teste de Unidade e Integração deverão ser executados pela equipe de 
+desemvolvimento;
+- O Teste de Ponta a Ponta (end-to-end) deverá ser executado pela equipe de teste, simulando
+o comportamento do usuário final, onde será testado todas as funcionalidades do sistema.
+
+
+
+REGRESSÃO DE RELEASE
+
+No andamento da regressão de release, os testes que ocasionaram erros, deverão ser executados 
+novamente refazendo os testes, incluindo partes do sistema que não foram afetados, corrigindo 
+os impedimentos e obstáculos com a devida prioridade, no intuito da melhoria da aplicação e 
+removendo qualquer impedimento para prosseguimento do projeto.
+
+
+
+REGRESSÃO DE PACOTES
+
+(Testes candidatos para a automação: Front-end)
+
+- CT01 - Validar o cadastro de usuário convencional;
+- CT02 - Validar o cadastro com o Facebook;
+- CT03 - Validar o cadastro com o Google;
+- CT04 - Validar login convencional;
+- CT05 - Validar login com o Facebook;
+- CT06 - Validar login com o Google;
+- CT07 - Validar login no checkout;
+- CT08 - Validar recuperação de senha;
+- CT09 - Validar instruções enviadas para o email;
+- CT10 - Validar a recuperação de senha quando não se tem acesso ao email cadastrado;
+- CT11 - Validar envio de produto para sacola (comprar);
+- CT12 - Validar retirada de produto da sacola (excluir produto);
+- CT13 - Validar cupom de desconto na sacola;
+- CT14 - Validar entrega por transporte - calculadora de frete;
+- CT15 - Validar adição de novo endereço de entrega;
+- CT16 - Validar escolha de endereço existente;
+- CT17 - Validar adição de novo cartão de crédito à vista;
+- CT18 - Validar adição de novo cartão de crédito parcelado;
+- CT19 - Validar compra com cartão de crédito cadastrado;
+- CT20 - Validar compra com cartão Renner;
+- CT21 - Validar compra com cartão "Meu cartão";
+- CT22 - Validar fluxo de compra sem estar logado;
+- CT23 - Validar fluxo de compra com usuário sem cadastro;
+- CT24 - Validar pagamento com Pix;
+- CT25 - Validar pagamento com boleto;
+- CT26 - Validar pagamento com cartão presente;
+- CT27 - Validar pagamento com cartão de débito virtual Caixa;	   
+
+(Testes candidatos para a automação: Back-end)
+- Não serão abordados nesta atividade.
+
+
+
+FERRAMENTAS
+
+Jira (organização e acompanhamento das tarefas)
+GitHub (repositório de atualizações das versões)
+Light Shot (prints de evidência de testes)
+OBS Studio (gravação em vídeos de evidências de teste)
+Pacote Office
+Microsoft Teams (reunião da equipe)
+Microsoft Outlook 
+XMind (criação do(s) mapas mentais)
+
+Observação: Algumas ferramentas, relacionadas à execução de testes back-end, não serão 
+informadas nesta atividade.
+
+
+
+EQUIPE DE TESTES
+
+
+CRONOGRAMA
+
+
+
+CONCLUSÃO
+
+
+
+
+
+
+
+
+
+
